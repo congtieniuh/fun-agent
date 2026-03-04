@@ -1,0 +1,29 @@
+{
+  "name": "@fun-agent/api",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "@fun-agent/auth": "workspace:*",
+    "@fun-agent/db": "workspace:*",
+    "@fun-agent/env": "workspace:*",
+    "@orpc/client": "catalog:",
+    "@orpc/openapi": "catalog:",
+    "@orpc/server": "catalog:",
+    "@orpc/zod": "catalog:",
+    "dotenv": "catalog:",
+    "next": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@fun-agent/config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}

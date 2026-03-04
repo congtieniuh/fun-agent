@@ -1,0 +1,24 @@
+{
+  "name": "@fun-agent/auth",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "@fun-agent/db": "workspace:*",
+    "@fun-agent/env": "workspace:*",
+    "better-auth": "catalog:",
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@fun-agent/config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}
